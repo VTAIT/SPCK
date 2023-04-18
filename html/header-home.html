@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/header-home.css">
+  <title>Header</title>
+</head>
+<body>
+  <div id="header-wrapper">
+    <div id="header" class="grid">
+      <div class="header-nav">
+
+        <!-- Logo -->
+        <h1 class="header-nav__logo">
+          <a href="" class="header-nav__logo-link">
+            <div style="background-image: url(https://logos-world.net/wp-content/uploads/2021/02/Crunchyroll-Emblem.png);" class="header-nav__logo-img"></div> 
+          </a>
+        </h1>
+
+        <!-- PC nav bar -->
+        <div class="nav__pc">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__item-link header-nav__item-link--red">HOME</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__item-link">NGÔN TÌNH</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__item-link">18+</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__item-link">NOVEL</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__item-link">ANIME</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__item-link">NEWS</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+      
+      <!-- Search input -->
+      <div class="header-search">
+        <div class="header-search__input-container">
+          <input type="text" name="text_add" id="txtKeywords" placeholder="Tìm kiếm truyện theo tên." class="header-search__input">
+        </div>
+        <button type="submit" id="searchPcTablet" class="btn-pc-tablet">
+          <i class="btn-pc-tablet-icon fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button type="submit" class="header-search-btn btn-mobile">
+          <i class="header-search-btn-icon fa-solid fa-magnifying-glass"></i>
+          <i class="header-search-btn-icon header-search-btn-icon-xmark fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Mobile nav bar -->
+        <label for="nav-mobile-input" id="js-bars-btn" class="nav__bars-btn">
+          <i class="nav__bars-btn-icon fa-solid fa-bars"></i>
+        </label>
+      </div>
+      
+      <!-- Side buttons -->
+      <div class="header-btns">
+        <button type="button" id="js-bell-alert" class="header-btns__item header-btns__item--bell">
+          <i class="header-btns__item-icon fa-regular fa-bell"></i>
+        </button>
+        <button type="button" id="js-user-modal" class="header-btns__item header-btns__item--user">
+          <i class="header-btns__item-icon fa-solid fa-user"></i>
+        </button>
+        <img src="https://truyengihotne.com/uploads/avatars/avatar.png" id="js-user-ava" class="modal__item-img--login d-none" alt="">
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Mobile nav bar -->
+  <input type="checkbox" hidden name="" id="nav-mobile-input" class="nav__input">
+
+  <label for="nav-mobile-input" id="js-nav-overlay" class="nav__overlay"></label>
+
+  <div id="js-nav-mobile" class="nav__mobile">
+    <label for="nav-mobile-input" id="js-nav-close" class="nav__mobile-close">
+      <i class="nav__mobile-close-icon fa-solid fa-xmark"></i>
+    </label>
+
+    <!-- Mobile nav list -->
+    <ul class="nav__mobile-list">
+      <li class="nav__mobile-item">
+        <a href="#" class="nav__mobile-link nav__mobile-link--red">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span> 
+        </a>
+      </li>
+      <li class="nav__mobile-item">
+        <a href="#" class="nav__mobile-link">
+        <i class="fa-solid fa-heart"></i>
+        <span>Ngôn tình</span></a>
+      </li>
+      <li class="nav__mobile-item">
+        <a href="#" class="nav__mobile-link">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <span>18+</span></a>
+      </li>
+      <li class="nav__mobile-item">
+        <a href="#" class="nav__mobile-link">
+        <i class="fa-solid fa-book-open"></i>
+        <span>Novel</span></a>
+      </li>
+      <li class="nav__mobile-item">
+        <a href="#" class="nav__mobile-link">
+        <i class="fa-solid fa-video"></i>
+        <span>Anime</span></a>
+      </li>
+      <li class="nav__mobile-item">
+        <a href="#" class="nav__mobile-link">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>News</span></a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- Mobile search -->
+  <div class="mobile-search">
+    <div class="mobile-search__overlay"></div>
+    <div class="mobile-search__inner">
+      <form action="" method="get" class="mobile-search__form">
+        <div class="mobile-search__input-container">
+          <input type="text" placeholder="Tìm kiếm truyện theo tên." name="" id="" class="mobile-search__input">
+          <button class="mobile-search__btn">
+            <i class="mobile-search__btn-icon fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- Modal before login -->
+  <div id="modal" class="">
+
+    <div class="modal-overlay grid">
+    <div class="modal-container">
+      <div class="modal-container__item d-flex">
+        <div class="modal__item-btn modal__item-btn--size-s">
+          <a href="./login.html" class="modal__item-link">ĐĂNG NHẬP</a>
+        </div>
+        <div class="modal__item-btn modal__item-btn--size-s">
+          <a href="./signup.html" class="modal__item-link">ĐĂNG KÝ</a>
+        </div>
+      </div>
+      <div class="modal-container__item d-flex">
+        <div class="modal__item-btn f-1">
+          <a href="" class="modal__item-link js-login-alert">XẾP HẠNG</a>
+        </div>
+      </div>
+      <div class="modal-container__item d-flex">
+        <div class="modal__item-btn">
+          <a href="" class="modal__item-link modal__item-btn--size-s js-login-alert">ĐANG ĐỌC</a>
+        </div>
+        <div class="modal__item-btn">
+          <a href="" class="modal__item-link modal__item-btn--size-s js-login-alert">THEO DÕI</a>
+        </div>
+      </div>
+      <div class="modal-container__item d-flex">
+        <div class="modal__item-btn f-1">
+          <a href="" class="modal__item-link js-login-alert">FAQ/HƯỚNG DẪN</a>
+        </div>
+      </div>
+      <div class="modal-container__item d-flex">
+        <div class="modal__item-btn modal__item-btn--social">
+          <a href="https://www.facebook.com/truyengidotnet/" class="modal__item-link">
+            <i class="modal__item-icon fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+        <div class="modal__item-btn">
+          <span class="modal__item-link modal__item-link--email">LIÊN HỆ NẠP VIP: CRUNCHYROLL@GMAIL.COM</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Modal after login -->
+  <div id="modal-login" class="d-none">
+  
+    <div class="modal-overlay grid">
+      <div class="modal-container">
+        <div class="modal-container__item modal-container__item--user d-flex">
+            <img src="https://truyengihotne.com/uploads/avatars/avatar.png" class="modal__item-img" alt="">
+          <div class="modal__item-btn modal__item-btn--size-m">
+            <span>LV.0/</span> USER
+          </div>
+        </div>
+        <div class="modal-container__item d-flex">
+          <div class="modal__item-btn modal__item-btn--profile f-1">
+            <a href="#" class="modal__item-link">TRANG CÁ NHÂN</a>
+          </div>
+        </div>
+        <div class="modal-container__item d-flex">
+          <div class="modal__item-btn f-1">
+            <a href="#" class="modal__item-link">XẾP HẠNG</a>
+          </div>
+        </div>
+        <div class="modal-container__item d-flex">
+          <div class="modal__item-btn">
+            <a href="#" class="modal__item-link modal__item-btn--size-s">ĐANG ĐỌC</a>
+          </div>
+          <div class="modal__item-btn">
+            <a href="#" class="modal__item-link modal__item-btn--size-s">THEO DÕI</a>
+          </div>
+        </div>
+        <div class="modal-container__item d-flex">
+          <div class="modal__item-btn f-1">
+            <a href="#" class="modal__item-link">FAQ/HƯỚNG DẪN</a>
+          </div>
+        </div>
+        <div class="modal-container__item d-flex">
+          <div class="modal__item-btn f-1">
+            <a href="" class="modal__item-link">ĐĂNG XUẤT</a>
+          </div>
+        </div>
+        <div class="modal-container__item d-flex">
+          <div class="modal__item-btn modal__item-btn--social">
+            <a href="https://www.facebook.com/truyengidotnet/" class="modal__item-link">
+              <i class="modal__item-icon fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+          <div class="modal__item-btn">
+            <span class="modal__item-link modal__item-link--email">LIÊN HỆ NẠP VIP: CRUNCHYROLL@GMAIL.COM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/header-home.js" type="module">
+
+  </script>
+</body>
+</html>

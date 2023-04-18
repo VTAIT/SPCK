@@ -1,0 +1,65 @@
+/* *{
+    background-color: rgb(80,80,80);
+} */
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black
+    
+}
+.nav{
+    /* margin-left: 100px; */
+    display: flex;
+    width: 90%;
+    /* box-sizing: border-box; */
+    /* border: solid red; */
+}
+#img-nav{
+   width: 300px;
+   height: 200px;
+}
+
+/* thể loại */
+.genre{
+    margin: auto;
+    width: 100%;
+    /* width: 970px; */
+    height: 270px;
+    color: white;
+    font-size: 20px;
+    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.genre a {
+    text-decoration: none;
+}
+
+.text-link {
+    color: red;
+}
+
+.genre-text{
+    height: 30px;
+    text-align: center;
+    
+}
+.text, .text-2{
+    color: red;
+    width: 960px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: 	rgb(79,79,79);
+    font-size: 15px;
+    padding: 5px;
+}
+#text{
+    padding: 6px;
+    cursor: pointer;
+    
+}
+

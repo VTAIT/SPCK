@@ -1,0 +1,107 @@
+body{
+    background-color: black;
+}
+
+.parent{
+    margin-left: 25%;
+}
+
+.intro {
+    display: flex;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+}
+
+.intro .image {
+    max-width: 100%;
+    width: 400px;
+    border-radius: 25px;
+    height: 400px;
+}
+
+.intro .content {
+    margin-left: 10px;
+    max-width: 100%;
+    width: 500px;
+}
+.intro .content .text{
+    color: white;
+}
+
+.intro .content .the-loai{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: rgb(123, 62, 62);
+    width: 80%;
+}
+
+.btn{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+.btn .btn-view {
+    border-radius: 10px;
+    background-color: orange;
+    font-size: 25px;
+}
+.btn .btn-follow {
+    border-radius: 10px;
+    background-color: orange;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.donate{
+    margin-top: 100px;
+    display: flex;
+    margin-left: 10px;
+    padding: 15px;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 40%;
+    max-width: 80px;
+    height: auto;
+    margin-right: 50px;
+   
+}
+
+.description{
+    margin-top: 100px;
+    display: flex;
+    margin-left: 10px;
+    padding: 15px;
+}
+.tom-tat-truyen{
+
+    color: white;
+    background-color: rgb(35, 24, 24);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+
+.icon-donate{
+    display: flex;
+    border-radius: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    background-color: rgb(35, 24, 24);
+}
+.icon-donate .icon{
+    border-radius: 50%;
+    width: 80px;
+    padding: 10px;
+}
+
+
+

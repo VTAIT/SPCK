@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(36, 34, 34);
+}
+
+p{
+    color: white;
+}
+
+.menu-top{
+    display: flex;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.menu-top .list{
+    
+    border-radius: 10px;
+    width: 200px;
+}
+
+.trang-de-xuat{
+    background-color: rgb(42, 22, 22);
+    margin: 0px;
+}
+
+.tieu-de{
+    
+    padding-left: 5px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.icon{
+    border-radius: 50%;
+    max-width: 100%;
+    width: 60px;
+    padding: 10px;
+}
+
+.item{
+    padding: 5px;
+    max-width: 100%;
+    width: 125px;
+  
+   
+}
+.item .img-item{
+    max-width: 100%;
+    width: 100px;
+    border-radius: 15px;
+    max-height: 100%;
+    height: 120px;
+
+}
+
+
+
+.list-truyen{
+    display: flex;
+    padding: 10px;
+}
+
+
+
+.img-au-co{
+    max-width: 100%;
+    width: 850px;
+}
+
+
+.top-item{
+    display: flex;
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+  
+}
+
+.top-item .img-top-item{
+    max-width: 100%;
+    width: 150px;
+    border-radius: 10px;
+    height: 220px;
+}
+
+.top-item .infor{
+ 
+    padding: 20px;
+}
+
+.top-item .infor .div-status{
+    display: flex;
+}
+
+.top-item .infor .div-status .status{
+    color: white;
+    background-color: rgb(40, 20, 20);
+    border-radius: 10px;
+
+    padding: 5px;
+    margin-right: 5px;
+
+}
+
+.list-top-truyen{
+
+    display: grid;
+    grid-template-columns: 375px 375px ;
+    gap: 10px;
+}
+
+
+
+@media (max-width= 1024px) {
+    
+    body{
+        width: 100%;
+        max-width: fit-content;
+    }
+    
+}

@@ -1,0 +1,67 @@
+/* *{
+    background-color: rgb(80,80,80);
+} */
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(40,40,40);
+    
+}
+.nav{
+    /* margin-left: 100px; */
+    display: flex;
+    width: 90%;
+    /* box-sizing: border-box; */
+    /* border: solid red; */
+}
+#img-nav{
+   width: 300px;
+   height: 200px;
+}
+
+/* thể loại */
+.genre{
+    margin: auto;
+    width: 960px;
+    height: 270px;
+    color: white;
+    font-size: 20px;
+    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#genre a {
+    text-decoration: none;
+}
+
+.text-link {
+    color:rgb(232, 67, 67);
+}
+
+.genre-text{
+    height: 30px;
+    text-align: center;
+    
+}
+.text, .text-2{
+    color: rgb(232, 67, 67);
+    width: 960px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: 	rgb(8,0,0);
+    font-size: 15px;
+    padding: 5px;
+    
+    
+    
+}
+#text{
+    padding: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+

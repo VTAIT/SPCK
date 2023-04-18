@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(35,35,35);
+    color: white;
+    height: 1000px;
+}
+.nav{
+    height: 50px;
+    padding: 5px;
+}
+.borler{
+    display: flex;
+    
+}
+.margin{
+    margin-left: 100px;
+}
+.img-slic{
+    width: 340px;
+    height: 520px;
+    padding: 10px;
+}
+.img-bor{
+    width: 330px;
+    height: 450px;
+    border-radius: 10px;
+}
+.img-s1{
+    background-color: rgb(213, 72, 72);
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    
+}
+.text-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 450px;
+    height: 500px;
+    padding: 5px;
+}
+.pan-text{
+    font-size: 30px;
+    text-align: center;
+}
+.fas.fa-star{
+    font-size: 40px;
+}
+.buttrap{
+    height: 25px;
+    background-color: rgb(32,32,32);
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+}
+.buttrap.bom-trap{
+    background-color: rgb(236, 44, 44);
+    width: 50px;
+}
+#pan-text2{
+    border-radius: 10px;
+    background-color: black;
+    height: 65px;
+    padding: 5px;
+}
+
+

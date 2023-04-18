@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+}
+
+.the-loai{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.the-loai .img{
+    border: 5px solid rgb(131, 13, 13);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    z-index: 10;
+    position: absolute;
+}
+
+.the-loai .ten-the-loai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(131, 13, 13);
+    border-radius: 15px;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: rgb(192, 62, 142);
+    color: white;
+    font-weight: bolder;
+}
+
+.parent{
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: 20% 20% 20%;
+    gap: 120px;
+}
+
+@media (max-width = 1024){
+    .parent{
+        width: 100%;
+    }
+}

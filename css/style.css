@@ -1,0 +1,441 @@
+.header {
+  background-color: antiquewhite;
+}
+
+.content-body {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: transparent;
+  margin-top: 0px;
+}
+
+.object {
+  width: 100%;
+  height: 360px;
+  background-color: blue;
+}
+
+:root {
+  --primary-color: rgb(33, 33, 33);
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-1 {
+  flex: 1;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.grid {
+  width: 1024px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#header-wrapper {
+  background-color: var(--primary-color);
+  width: 100%;
+  /* position: fixed; */
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+
+/* Logo */
+.header-nav__logo {
+  margin-left: 12px;
+}
+
+.header-nav__logo-link {
+  text-decoration: none;
+}
+
+.header-nav__logo-img {
+  width: 96px;
+  height: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* Navigation list */
+.header-nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.header-nav__item {
+  margin-right: 10px;
+}
+
+.header-nav__item-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 16px 0;
+}
+
+.header-nav__item-link--red {
+  color: #ff2d57;
+}
+
+
+/* Search input */
+.header-search {
+  display: flex;
+  background-color: rgb(42, 42, 42);
+  border-radius: 50px;
+}
+
+.header-search__input-container {
+  position: relative;
+}
+
+.header-search__input {
+  width: 100%;
+  height: 30px;
+  background-color: rgb(42, 42, 42);
+  color: #fff;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.header-search-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 36px;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.header-search-btn-icon {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+
+/* Side buttons */
+.header-btns {
+  margin-right: 12px;
+}
+
+.header-btns__item {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(133, 22, 30);
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header-btns__item-icon {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+
+/* Modal */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-container {
+  width: 310px;
+  max-width: 100%;
+  position: absolute;
+  top: 50px;
+  right: 12px;
+  background-color: rgb(42, 42, 42);
+  border-radius: 5px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  padding: 5px 0;
+  animation: modalFadeIn ease 0.3s;
+}
+
+.modal-container__item {
+  justify-content: space-between;
+}
+
+.modal__item-btn {
+  background-color: rgb(14, 14, 14);
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+.modal__item-btn--size-s {
+  width: 135px;
+}
+
+.modal__item-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: block;
+  padding: 5px 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.modal__item-icon {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.modal__item-btn--social {
+  margin-right: 0;
+}
+
+.modal__item-link--email {
+  font-size: 1rem;
+  position: relative;
+  top: 2px;
+}
+
+/* slider */
+.slider {
+  background: transparent;
+  color: white;
+  width: 90%;
+  height: 200px;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+.slide {
+  width: 240px;
+  flex-shrink: 0;
+  height: 100%;
+  color: white;
+  padding: 0px 10px;
+}
+
+.slide-img {
+  width: 100%;
+  height: 200px;
+}
+
+/* the loai truyen */
+.the-loai-truyen {
+  display: grid;
+  margin: 5px auto;
+  grid-template-columns: auto auto auto;
+  column-gap: 50px;
+  height: 200px;
+  margin-left: 5px;
+}
+
+.the-loai {
+  display: flex;
+  box-sizing: border-box;
+  height: 90px;
+  width: 67%;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.the-loai .img {
+  border: 5px solid rgb(131, 13, 13);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+}
+
+.the-loai .ten-the-loai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(131, 13, 13);
+  border-radius: 15px;
+  width: 100%;
+  height: 60px;
+  font-size: 14px;
+  background-color: rgb(192, 62, 142);
+  color: white;
+  font-weight: bolder;
+  position: absolute;
+  left: 70px;
+}
+
+/* Tag truyen */
+.genre{
+  margin: auto;
+  width: 100%;
+  height: 270px;
+  color: white;
+  font-size: 20px;
+  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+#genre a {
+  text-decoration: none;
+}
+
+.text-link {
+  color:rgb(232, 67, 67);
+}
+
+.genre-text{
+  height: 30px;
+  text-align: center;
+  
+}
+.text, .text-2{
+  color: rgb(232, 67, 67);
+  width: 960px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: 	rgb(8,0,0);
+  font-size: 15px;
+  padding: 5px;
+  
+  
+  
+}
+#text{
+  padding: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+@media (max-width: 576px) {
+  #footer-wrapper {
+    margin-top: 50px;
+  }
+
+  .the-loai-truyen {
+    grid-template-columns: auto !important;
+  }
+
+  .item-mobile-none {
+    display: none;
+  }
+
+  .list-truyen .item .link {
+    max-height: unset !important;
+  }
+
+  .vip-coin {
+    font-size: 1.3rem !important;
+  }
+}
+
+
+@media (max-width: 740px) {
+  .the-loai-truyen {
+    grid-template-columns: auto auto;
+  }
+
+  .truyen-moi {
+    margin-top: 80px;
+  }
+
+  .list-truyen {
+    justify-content: space-evenly;
+  }
+
+  .item-none {
+    display: none;
+  }
+
+  .text-2 {
+    margin-bottom: 100px;
+  }
+
+  .list-truyen .item {
+    width: 20% !important;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .text-2 {
+    margin-bottom: 30px;
+  }
+  
+  #hagtag,
+  .text-2 {
+    width: 100%;
+  }
+}
