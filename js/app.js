@@ -222,7 +222,7 @@ for (const item of path.listTheLoaiTruyen) {
     content += `
         <div onclick="linkTruyenMoi()" class="the-loai">
             <div class="ten-the-loai">${item.description}</div>
-            <img class="img" src="${item.src}" alt="">
+            <img class="img" data-src="${item.src}" alt="">
         </div>
     `;
     }
@@ -230,7 +230,7 @@ for (const item of path.listTheLoaiTruyen) {
         content += `
         <div onclick="linkTruyenMoi()" class="the-loai item-mobile-none">
             <div class="ten-the-loai">${item.description}</div>
-            <img class="img" src="${item.src}" alt="">
+            <img class="img" data-src="${item.src}" alt="">
         </div>
     `;
     }
@@ -249,7 +249,7 @@ for (const item of path.listTruyenMoi) {
         content += `
             <div class="item">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -263,7 +263,7 @@ for (const item of path.listTruyenMoi) {
         content += `
             <div class="item item-mobile-none">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -277,7 +277,7 @@ for (const item of path.listTruyenMoi) {
         content += `
             <div class="item item-none item-mobile-none">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -294,7 +294,7 @@ let bodyTruyenMoi = `
 <div class="div-menu">
             <div class="div-menu-trai">
                 <div>
-                    <img class="icon" src="${path.titleList.src}" alt="photo">
+                    <img class="icon" data-src="${path.titleList.src}" alt="photo">
 
                 </div>
                 <div class="content">
@@ -318,7 +318,7 @@ for (const item of path.listTieuThuyetMoi) {
         content += `
             <div class="item">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -332,7 +332,7 @@ for (const item of path.listTieuThuyetMoi) {
         content += `
             <div class="item item-mobile-none">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -346,7 +346,7 @@ for (const item of path.listTieuThuyetMoi) {
         content += `
             <div class="item item-none item-mobile-none">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -363,7 +363,7 @@ let bodyTieuThuyetMoi = `
 <div class="div-menu">
             <div class="div-menu-trai">
                 <div>
-                    <img class="icon" src="${path.titleList.src}" alt="photo">
+                    <img class="icon" data-src="${path.titleList.src}" alt="photo">
 
                 </div>
                 <div class="content">
@@ -387,7 +387,7 @@ for (const item of path.listTruyen18Moi) {
         content += `
             <div class="item">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -401,7 +401,7 @@ for (const item of path.listTruyen18Moi) {
         content += `
             <div class="item item-mobile-none">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -415,7 +415,7 @@ for (const item of path.listTruyen18Moi) {
         content += `
             <div class="item item-none item-mobile-none">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -432,7 +432,7 @@ let bodyTruyen18Moi = `
 <div class="div-menu">
             <div class="div-menu-trai">
                 <div>
-                    <img class="icon" src="${path.titleList.src}" alt="photo">
+                    <img class="icon" data-src="${path.titleList.src}" alt="photo">
 
                 </div>
                 <div class="content">
@@ -456,7 +456,7 @@ for (const item of path.listNgonTinhMoi) {
         content += `
             <div class="item">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -470,7 +470,7 @@ for (const item of path.listNgonTinhMoi) {
         content += `
             <div class="item item-mobile-none">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -484,7 +484,7 @@ for (const item of path.listNgonTinhMoi) {
         content += `
             <div class="item item-none item-mobile-none">
                 <a  href="./html/item${count+1}/item${count+1}.html">
-                    <img class="link" src="${item.src}" alt="photo">
+                    <img class="link" data-src="${item.src}" alt="photo">
                 </a>
                 <div class="ten-truyen">
                     ${item.description}
@@ -501,7 +501,7 @@ let bodyngonTinhMoi = `
 <div class="div-menu">
             <div class="div-menu-trai">
                 <div>
-                    <img class="icon" src="${path.titleList.src}" alt="photo">
+                    <img class="icon" data-src="${path.titleList.src}" alt="photo">
 
                 </div>
                 <div class="content">
@@ -524,7 +524,7 @@ content = "";
 for (let index = 0; index < path.listTruyenMoi.length; index++) {
     content += `
         <div class="slide">
-            <img class="slide-img" src="${path.listTruyenMoi[index].src}" alt="photo"">
+            <img class="slide-img" data-src="${path.listTruyenMoi[index].src}" alt="photo"">
         </div>
     `;
 
@@ -576,7 +576,7 @@ for (const item of path.listTinhNang) {
     content += `
         <div class="link">
             <a href="index.html">
-                <img class="link1" src="${item}" alt="photo">
+                <img class="link1" data-src="${item}" alt="photo">
 
             </a>
         </div>
@@ -589,7 +589,7 @@ for (let i = 0; i < 10; i++) {
     topUser += `
     <div class="rank">
         <img style="width: 100px; border-radius: 60px;"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCop4PIAvUcs8kSyko-DN7yu9MeUnacp8rfw&usqp=CAU" alt="avatar">
+            data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCop4PIAvUcs8kSyko-DN7yu9MeUnacp8rfw&usqp=CAU" alt="avatar">
         <div class="info">
             <div class="top-row">
                 <div class="name-level">
@@ -742,5 +742,38 @@ window.smoothScroll = function(target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+const config = {
+    rootMargin: "0px 0px 50px 0px",
+    threshold: 0
+};
+
+let observer = new IntersectionObserver(function (entries, self) {
+    console.log(entries);
+    // iterate over each entry
+    entries.forEach(entry => {
+        // process just the images that are intersecting.
+        // isIntersecting is a property exposed by the interface lazy load là gì
+        if (entry.isIntersecting) {
+            // custom function that copies the path to the img
+            // from data-src to src
+            // preloadImage(entry.target);
+            let url = entry.target.getAttribute('data-src');
+            console.log(url);
+            entry.target.removeAttribute('data-src');
+            entry.target.setAttribute('src', url);
+            // the image is now in place, stop watching
+            self.unobserve(entry.target);
+        }
+
+    });
+
+}, config);
+
+const imgs = document.querySelectorAll('[data-src]');
+console.log(imgs)
+imgs.forEach(img => {
+    observer.observe(img);
+});
 
 
